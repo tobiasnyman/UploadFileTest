@@ -11,8 +11,9 @@
     <title>Index</title>
 </head>
 <body>
-    @using(Html.BeginForm("Process", "UploadFile", FormMethod.Post, new { enctype = "multipart/frm-data" }))
+    @using(Html.BeginForm("Process", "UploadFile", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
+        @ViewBag.Error
         <table cellpadding="2" cellspacing="2">
             <tr>
                 <td>Photo</td>
